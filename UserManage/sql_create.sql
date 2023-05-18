@@ -1,0 +1,10 @@
+-- SQLite
+CREATE TABLE user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    uuid CHAR(36) NOT NULL,
+    user_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    last_login_ip VARCHAR(15) NOT NULL,
+    user_type INT NOT NULL,
+    deleted BOOLEAN NOT NULL DEFAULT FALSE
+);
